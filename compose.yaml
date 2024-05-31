@@ -1,0 +1,10 @@
+services:
+  node:
+    container_name: docker-vite-test-node
+    image: node:20-alpine
+    working_dir: /app
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app
+    tty: true
