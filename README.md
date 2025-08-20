@@ -1,14 +1,12 @@
-# Docker Vite Starter
-
-## Installation
+# Dockerize Vite Starter
 
 ```bash
 docker compose up -d
 
-docker compose exec node yarn
-docker compose exec node yarn dev
-docker compose exec node yarn build
-docker compose run --rm -p 4173:4173 node yarn preview
+docker compose exec web yarn
+docker compose exec web yarn dev
+docker compose exec web yarn build
+docker compose run --rm -p 5173:5173 web yarn preview
 
 docker compose down
 ```
