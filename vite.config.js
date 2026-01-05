@@ -1,14 +1,14 @@
 import { URL, fileURLToPath } from 'node:url'
 import { defineConfig } from 'vite'
 import Vue from '@vitejs/plugin-vue'
-import TailwindCss from '@tailwindcss/vite'
-import Pages from 'vite-plugin-pages'
+import VueRouter from 'unplugin-vue-router/vite'
+import TailwindCSS from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
+    VueRouter(),
     Vue(),
-    TailwindCss(),
-    Pages(),
+    TailwindCSS(),
   ],
   server: {
     host: true,
