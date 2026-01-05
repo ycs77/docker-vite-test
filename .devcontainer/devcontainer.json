@@ -1,0 +1,17 @@
+{
+  "name": "Docker Vite Test App",
+	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "EditorConfig.EditorConfig",
+        "bradlc.vscode-tailwindcss",
+        "Vue.volar"
+      ]
+    }
+  },
+	"forwardPorts": [5173]
+	// "postCreateCommand": "",
+	// "features": {},
+	// "remoteUser": "root"
+}
